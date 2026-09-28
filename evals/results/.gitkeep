@@ -1,0 +1,9 @@
+# Results Directory
+
+Evaluation results will be written here.
+
+Files generated:
+- `eval_results.json` - Full results with per-query scores
+- `summary.md` - Human-readable summary
+- `results.csv` - Per-query scores as CSV
+- `results.parquet` - Per-query scores as Parquet
