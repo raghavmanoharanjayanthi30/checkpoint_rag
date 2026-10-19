@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-17T18:34:04.088393",
+    "num_queries": 5,
+    "sample_size": 5,
+    "langsmith_project": "checkpoint-rag-ops"
+  },
+  "aggregate_scores": {
+    "faithfulness": 0.9333333333333332,
+    "answer_relevance": 0.9,
+    "actionability": 0.5
+  },
+  "per_query_results": [
+    {
+      "id": "Q001",
+      "query": "What's the maximum number of steps allowed in a single workflow?",
+      "category": "workflows",
+      "difficulty": "easy",
+      "generated_answer": "The maximum number of steps allowed in a single workflow is not explicitly stated in the provided documents. However, it is mentioned that the total workflow runtime is capped at 30 minutes regardless of the number of steps. For specific limits on the number of steps, additional documentation may be required.",
+      "ground_truth": "The maximum number of steps in a single Helix workflow is 100.",
+      "sources_used": [
+        "95c0ae9d64c25d49e1496295a547b1b7",
+        "d2f743d5c0bdd0c085c4ceaf73e75613"
+      ],
+      "confidence": "low",
+      "scores": {
+        "faithfulness": 0.6666666666666666,
+        "answer_relevance": 0.5,
+        "actionability": 0.5
+      }
+    },
+    {
+      "id": "Q002",
+      "query": "How long can a workflow run before it times out?",
+      "category": "workflows",
+      "difficulty": "easy",
+      "generated_answer": "A workflow can run for a maximum of 30 minutes before it times out.",
+      "ground_truth": "A workflow run is terminated after 30 minutes. This is a platform-wide hard limit.",
+      "sources_used": [
+        "cc580d6239480ab9fec6697b606577d4",
+        "2f33877183a4fa45b1972f81896ea704"
+      ],
+      "confidence": "high",
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0,
+        "actionability": 0.5
+      }
+    },
+    {
+      "id": "Q003",
+      "query": "How much does the Pro plan cost?",
+      "category": "billing",
+      "difficulty": "easy",
+      "generated_answer": "The Pro plan costs $299 per month.",
+      "ground_truth": "The Pro plan costs $299 per month.",
+      "sources_used": [
+        "0e638860688e4af25be8881e7fdd0253"
+      ],
+      "confidence": "high",
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0,
+        "actionability": 0.5
+      }
+    },
+    {
+      "id": "Q004",
+      "query": "What's the API rate limit on the Pro plan?",
+      "category": "api",
+      "difficulty": "easy",
+      "generated_answer": "The API rate limit on the Pro plan is 1000 requests per minute. However, it's important to note that limits are per-workspace, not per-API-key, meaning all keys in the same workspace share the budget.",
+      "ground_truth": "The Pro plan rate limit is 1000 requests per minute.",
+      "sources_used": [
+        "c6af04634b00df0311433ee6b8f79915",
+        "89f2a6d60300851b95458539d61f73c7"
+      ],
+      "confidence": "high",
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0,
+        "actionability": 0.5
+      }
+    },
+    {
+      "id": "Q005",
+      "query": "What HTTP status code does Helix return when you hit a rate limit?",
+      "category": "api",
+      "difficulty": "easy",
+      "generated_answer": "Helix returns the HTTP status code 429 when you hit a rate limit.",
+      "ground_truth": "Helix returns HTTP 429 Too Many Requests when rate limited, along with a Retry-After header indicating how long to wait before retrying.",
+      "sources_used": [
+        "c6af04634b00df0311433ee6b8f79915",
+        "9a3709ba32e7422af3933d71c6fef3a7"
+      ],
+      "confidence": "high",
+      "scores": {
+        "faithfulness": 1.0,
+        "answer_relevance": 1.0,
+        "actionability": 0.5
+      }
+    }
+  ]
+}

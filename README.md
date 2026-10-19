@@ -2,7 +2,7 @@
 
 ## ?? Loom Walkthrough
 
-[Watch the demo video](https://www.loom.com/share/7e378ea550fb49c7939cb26f319c8456)
+[Watch the demo video](https://www.loom.com/share/a6e2914246a84cfaa9e1bc546f4a37a0)
 
 ---
 

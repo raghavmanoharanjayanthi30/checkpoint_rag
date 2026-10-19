@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "timestamp": "2026-10-18T19:42:15.670252",
+    "corpus_path": "./corpus",
+    "total_files": 100,
+    "total_documents": 101,
+    "total_chunks": 196
+  },
+  "results": {
+    "chunk_length": {
+      "expectation": "chunk_length_in_range",
+      "success": false,
+      "details": {
+        "min_expected": 100,
+        "max_expected": 1500,
+        "violations": [
+          {
+            "index": 59,
+            "length": 19,
+            "issue": "too_short"
+          }
+        ],
+        "total_chunks": 196,
+        "violation_count": 1
+      }
+    },
+    "metadata_completeness": {
+      "expectation": "metadata_completeness",
+      "success": true,
+      "details": {
+        "required_fields": [
+          "id",
+          "source",
+          "doc_type"
+        ],
+        "violations": [],
+        "total_chunks": 196,
+        "violation_count": 0
+      }
+    },
+    "no_empty_chunks": {
+      "expectation": "no_empty_chunks",
+      "success": true,
+      "details": {
+        "empty_indices": [],
+        "total_chunks": 196,
+        "empty_count": 0
+      }
+    },
+    "no_pii": {
+      "expectation": "no_pii_detected",
+      "success": false,
+      "details": {
+        "patterns_checked": [
+          "email",
+          "phone",
+          "ssn",
+          "credit_card"
+        ],
+        "violations": [
+          {
+            "index": 2,
+            "pii_type": "email",
+            "match_count": 1,
+            "sample": "[REDACTED - 1 matches]"
+          },
+          {
+            "index": 24,
+            "pii_type": "email",
+            "match_count": 1,
+            "sample": "[REDACTED - 1 matches]"
+          },
+          {
+            "index": 25,
+            "pii_type": "email",
+            "match_count": 1,
+            "sample": "[REDACTED - 1 matches]"
+          },
+          {
+            "index": 63,
+            "pii_type": "email",
+            "match_count": 1,
+            "sample": "[REDACTED - 1 matches]"
+          },
+          {
+            "index": 95,
+            "pii_type": "email",
+            "match_count": 1,
+            "sample": "[REDACTED - 1 matches]"
+          },
+          {
+            "index": 99,
+            "pii_type": "email",
+            "match_count": 2,
+            "sample": "[REDACTED - 2 matches]"
+          },
+          {
+            "index": 100,
+            "pii_type": "email",
+            "match_count": 2,
+            "sample": "[REDACTED - 2 matches]"
+          },
+          {
+            "index": 145,
+            "pii_type": "email",
+            "match_count": 1,
+            "sample": "[REDACTED - 1 matches]"
+          },
+          {
+            "index": 146,
+            "pii_type": "email",
+            "match_count": 1,
+            "sample": "[REDACTED - 1 matches]"
+          },
+          {
+            "index": 159,
+            "pii_type": "phone",
+            "match_count": 1,
+            "sample": "[REDACTED - 1 matches]"
+          }
+        ],
+        "total_chunks": 196,
+        "violation_count": 10
+      }
+    },
+    "valid_doc_types": {
+      "expectation": "valid_doc_types",
+      "success": true,
+      "details": {
+        "valid_types": [
+          "ticket",
+          "runbook",
+          "product-doc"
+        ],
+        "violations": [],
+        "total_chunks": 196,
+        "violation_count": 0
+      }
+    },
+    "summary": {
+      "all_passed": false,
+      "passed": 3,
+      "failed": 1,
+      "total": 4
+    }
+  },
+  "summary": {
+    "all_passed": false,
+    "passed": 3,
+    "failed": 1,
+    "total": 4
+  }
+}
